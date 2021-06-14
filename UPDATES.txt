@@ -1,0 +1,6 @@
+Updates to this directory:
+
+June 10, 2021: Initialized directory. Included edep-sim and larnd-sim steps.
+
+June 10, 2021: Added the event-display program to view events after the larnd-sim step.
+https://github.com/larpix/larpix-v2-testing-scripts/tree/master/event-display
