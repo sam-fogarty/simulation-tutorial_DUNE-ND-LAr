@@ -12,7 +12,7 @@ Usage: simulate_pixels.py INPUT_FILENAME PIXEL_LAYOUT DETECTOR_PROPERTIES <flags
 So, for example:
                             input edep-sim file                                       detector properties
                             |                                                         |
-'python3 simulate_pixels.py ../edep-sim_scripts/test.h5 multi_tile_layout-2.2.16.yaml module0.yaml --output_filename larndsim_test.h5'
+'python3 simulate_pixels.py ../edep-sim_scripts/electron_test.h5 multi_tile_layout-2.2.16.yaml module0.yaml --output_filename larndsim_electron_test.h5'
                                                         |                             
                                                         pixel layout for detector     
                              
@@ -22,8 +22,8 @@ To run the event-display:
 
 First convert the .h5 file produced in the previous step (not the one produced after the dumpTree step) to evd format:
 
-'python3 event-display/to_evd_file.py --in_filename larndsim_test.h5 --out_filename larndsim_test_evd.h5 --geometry_file multi_tile_layout-2.2.16.yaml'
+'python3 event-display/to_evd_file.py --in_filename larndsim_electron_test.h5 --out_filename larndsim_electron_test_evd.h5 --geometry_file multi_tile_layout-2.2.16.yaml'
 
 Then run the event-display:
 
-'python3 event-display/quick_display.py -i larndsim_test_evd.h5'
+'python3 event-display/quick_display.py -i larndsim_electron_test_evd.h5'
