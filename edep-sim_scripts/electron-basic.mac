@@ -1,0 +1,5 @@
+/gps/particle e-
+/gps/energy 600 MeV
+/gps/pos/type Point
+/gps/pos/centre 0.0 0.0 0.0 m
+/gps/direction 0.0 -1.0 0.0
