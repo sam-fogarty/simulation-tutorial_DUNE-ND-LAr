@@ -11,9 +11,9 @@
 /gps/particle e-
 /gps/energy 600 MeV
 #/gps/energy 50 MeV
-#/gps/ene/type Lin
-#/gps/ene/gradient 0
-#/gps/ene/intercept 1
+/gps/ene/type Lin
+/gps/ene/gradient 0
+/gps/ene/intercept 1
 #/gps/ene/min 50 MeV # You'll want to change this to relevant energy values
 #/gps/ene/max 6000 MeV # This too!
 # This generates the position of the first particle gun.  It will be
@@ -25,9 +25,9 @@
 /gps/pos/halfx 1 cm
 /gps/pos/halfy 1 cm
 /gps/pos/halfz 1 cm
-/gps/pos/type Point
-/gps/pos/centre 0.0 0.0 0.0 m
-/gps/direction 0.0 0 -1.0
+#/gps/pos/type Point # I don't think a point source generation makes sense here.
+#/gps/pos/centre 0.0 0.0 0.0 m
+#/gps/direction 0.0 0 -1.0
 # This generates the direction of the first particle gun.
 /gps/ang/type beam1d
 /gps/ang/sigma_r 15 deg
