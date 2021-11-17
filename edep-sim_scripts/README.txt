@@ -4,7 +4,7 @@ This will describe how to generate particles using a Geant4 macro, and how to us
 
 We need to run edep-sim. In a terminal, you'd run something like:
 
-'edep-sim -u -e 10 -g Module0.gdml -o test.root singlemuon.mac'
+edep-sim -u -e 10 -g Module0.gdml -o test.root singlemuon.mac
 
 '-e 10' generates 10 muons, change that to how many events you want to generate. '-g Module0.gdml' loads in the geometry for the detector we want to use.
 '-o test.root' specifies the name of the output file, should be a .root file. At the end the macro is specified.
@@ -12,6 +12,8 @@ We need to run edep-sim. In a terminal, you'd run something like:
 
 Once you produce the root file, it must be converted to a friendlier format. Run:
 
-'python3 dumpTree.py test.root test.h5'
+python3 dumpTree.py test.root test.h5
 
 Which runs a python script that converts to an h5py format .h5. See 'explore_h5.ipynb' for an example of how to open and read h5py files. This is a crucial step (the converting) because larnd-sim, the rest of the detector simulation, uses this format as input. Feel free to move around files as needed to make it easier to run things; this repo is your oyster.
+
+I have some examples of running edep-sim and dumpTree.py in Jupyter notebooks that you can find in the edep-sim_scripts/examples folder. I also give some examples of accessing edep-sim (dumpTree) output. Those have more indepth examples, where the example here is pretty basic.
