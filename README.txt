@@ -9,3 +9,11 @@ Now you can start simulating. Next, navigate to the edep-sim_scripts folder. Thi
 After you've made some edep-sim output files, navigate to the larnd-sim_scripts folder. There are instructions there for how to run larnd-sim there. It takes as input the .h5 file produced at the last step. larnd-sim can be run in a jupyter notebook or as a python script.
 
 A side note: If you would like to improve or add on to larnd-sim (and are interested in applying those improvement/additions to the larnd-sim git repo), you need to keep in mind that only certain packages/commands will work with larnd-sim. This is because larnd-sim uses GPUs and the CUDA python package in order to speed up the software by a lot compared to just CPUs. As a result, only certain packages and python commands are compatible with CUDA. 
+
+If you'd like to match charge and light events, either in simulation or data, who may want to look into module0_flow
+
+https://github.com/peter-madigan/module0_flow
+https://module0-flow.readthedocs.io/en/latest/
+
+It is currently only working for module 0 (or possibly just a single module of ND-LAr). It "builds" charge events which basically means that it clusters and collects together charge packets into events. This is also a step that you could do on your own without this software, but module0_flow provides an easy and standard way to do it for module 0 analysis.
+(Also, installation requires conda to install. So if you cannot use (or do not want to use) conda for installation, you will want to find a way around this. Or install locally.)

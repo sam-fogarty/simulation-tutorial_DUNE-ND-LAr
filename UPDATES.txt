@@ -8,3 +8,5 @@ https://github.com/larpix/larpix-v2-testing-scripts/tree/master/event-display
 June 28, 2021: Added the software and a simple script for running the "particle bomb" event generator.
 
 November 15, 2021: Removed out of date larnd-sim files in larnd-sim_scripts. Now one needs to git clone larnd-sim for themselves, in order to ensure up-to-date files. Also updated various READMEs. 
+
+November 17, 2021: Added some examples for running edep-sim and accessing edep-sim/dumpTree output.
